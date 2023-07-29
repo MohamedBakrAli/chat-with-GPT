@@ -1,0 +1,48 @@
+body {
+    background-color: #EFEAE2;
+}
+
+.container {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.messageInputs {
+    display: flex;
+    margin-top: 11px;
+}
+
+.messageInputs > textarea {
+    flex-grow: 1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 2px;
+    padding: 2px;
+}
+
+li.sentMessage {
+    text-align: right;
+}
+
+li.recivedMessage {
+    text-align: left;
+}
+
+li > span {
+    padding: 5px;
+}
+
+.sentMessage > span {
+    background-color: #d9fdd3;
+}
+
+.recivedMessage > span {
+    background-color: #FFF;
+}
