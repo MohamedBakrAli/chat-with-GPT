@@ -12,11 +12,11 @@ module.exports = (server) => {
             console.log('Received message:', msg);
             try {
                 // get the massage replay from GPT APIs
-                //const msgReplay = await getGPTReplay(msg);
-                //console.log('message replay:', msgReplay);
+                const msgReplay = await getGPTReplay(msg);
+                console.log('message replay:', msgReplay);
 
                 // broadcast the response to all connected clients
-                socket.emit('chat_message_resopnse', 'msgReplay');
+                socket.emit('chat_message_resopnse', msgReplay);
             }
             catch (error) {
                 console.error(error);

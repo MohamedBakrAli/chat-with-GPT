@@ -1,6 +1,9 @@
+
 const express = require('express');
 const http = require('http');
 const MainRouters = require('./routes/MainRoutes');
+
+require('dotenv').config();
 
 // set up the app and server
 const app = express();
